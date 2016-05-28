@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TestSwiftProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BjV-qV-6va" customClass="ColorPicker" customModule="TestSwiftProject" customModuleProvider="target">
+                                <rect key="frame" x="30" y="272" width="260" height="23"/>
+                                <color key="backgroundColor" red="0.74117647060000003" green="0.1176470588" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D51-fA-2np">
+                                <rect key="frame" x="40" y="28" width="240" height="160"/>
+                                <color key="backgroundColor" red="0.94509803920000002" green="0.76862745099999996" blue="0.058823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="D51-fA-2np" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.28" id="DW2-zY-hdE"/>
+                            <constraint firstItem="BjV-qV-6va" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Djo-o8-Vg2"/>
+                            <constraint firstItem="D51-fA-2np" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.75" id="MeR-Mi-yBS"/>
+                            <constraint firstItem="BjV-qV-6va" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.042" id="Tz1-ls-iRC"/>
+                            <constraint firstItem="D51-fA-2np" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="h2Q-hS-2ew"/>
+                            <constraint firstItem="BjV-qV-6va" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qAQ-lY-1Rr"/>
+                            <constraint firstItem="BjV-qV-6va" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.815" id="wP9-Ft-DZs"/>
+                            <constraint firstItem="D51-fA-2np" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yNd-VC-zbK"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="colorPicker" destination="BjV-qV-6va" id="Cct-Dl-DqE"/>
+                        <outlet property="colorView" destination="D51-fA-2np" id="mw2-i6-E6N"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="114" y="296"/>
+        </scene>
+    </scenes>
+</document>
