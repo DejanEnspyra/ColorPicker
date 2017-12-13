@@ -15,6 +15,8 @@
 		32A490631CFA3EBA009D4A3F /* TestSwiftProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A490621CFA3EBA009D4A3F /* TestSwiftProjectTests.swift */; };
 		32A4906E1CFA3EBA009D4A3F /* TestSwiftProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A4906D1CFA3EBA009D4A3F /* TestSwiftProjectUITests.swift */; };
 		32A4907C1CFA3EEA009D4A3F /* ColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A4907B1CFA3EEA009D4A3F /* ColorPicker.swift */; };
+		4C300AF21FE03F1800A199C9 /* BrightnessPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C300AF11FE03F1800A199C9 /* BrightnessPicker.swift */; };
+		4C300AF41FE0D4B100A199C9 /* ColorControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C300AF31FE0D4B100A199C9 /* ColorControl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		32A4906D1CFA3EBA009D4A3F /* TestSwiftProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSwiftProjectUITests.swift; sourceTree = "<group>"; };
 		32A4906F1CFA3EBA009D4A3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		32A4907B1CFA3EEA009D4A3F /* ColorPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPicker.swift; sourceTree = "<group>"; };
+		4C300AF11FE03F1800A199C9 /* BrightnessPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrightnessPicker.swift; sourceTree = "<group>"; };
+		4C300AF31FE0D4B100A199C9 /* ColorControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorControl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 				32A490561CFA3EBA009D4A3F /* LaunchScreen.storyboard */,
 				32A490591CFA3EBA009D4A3F /* Info.plist */,
 				32A4907B1CFA3EEA009D4A3F /* ColorPicker.swift */,
+				4C300AF11FE03F1800A199C9 /* BrightnessPicker.swift */,
+				4C300AF31FE0D4B100A199C9 /* ColorControl.swift */,
 			);
 			path = TestSwiftProject;
 			sourceTree = "<group>";
@@ -191,11 +197,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = TheAppSpace;
 				TargetAttributes = {
 					32A490491CFA3EBA009D4A3F = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = CE33WK297P;
 					};
 					32A4905D1CFA3EBA009D4A3F = {
 						CreatedOnToolsVersion = 7.3;
@@ -259,8 +266,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C300AF21FE03F1800A199C9 /* BrightnessPicker.swift in Sources */,
 				32A490501CFA3EBA009D4A3F /* ViewController.swift in Sources */,
 				32A4904E1CFA3EBA009D4A3F /* AppDelegate.swift in Sources */,
+				4C300AF41FE0D4B100A199C9 /* ColorControl.swift in Sources */,
 				32A4907C1CFA3EEA009D4A3F /* ColorPicker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -325,13 +334,21 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -358,6 +375,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -371,13 +389,21 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -396,6 +422,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -405,10 +433,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = CE33WK297P;
 				INFOPLIST_FILE = TestSwiftProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.theappspace.TestSwiftProject;
+				PRODUCT_BUNDLE_IDENTIFIER = com.michaelkroth;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -416,10 +447,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = CE33WK297P;
 				INFOPLIST_FILE = TestSwiftProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.theappspace.TestSwiftProject;
+				PRODUCT_BUNDLE_IDENTIFIER = com.michaelkroth;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -488,6 +522,7 @@
 				32A490741CFA3EBA009D4A3F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		32A490751CFA3EBA009D4A3F /* Build configuration list for PBXNativeTarget "TestSwiftProjectTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +531,7 @@
 				32A490771CFA3EBA009D4A3F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		32A490781CFA3EBA009D4A3F /* Build configuration list for PBXNativeTarget "TestSwiftProjectUITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +540,7 @@
 				32A4907A1CFA3EBA009D4A3F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
