@@ -8,13 +8,16 @@
 
 import UIKit
 
-class ViewController: UIViewController,colorDelegate {
+class ViewController: UIViewController, ColorDelegate {
+    
     @IBOutlet var colorPicker: ColorPicker!
     @IBOutlet var colorView: UIView!
-
+    @IBOutlet var brightness: BrightnessPicker!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         colorPicker.delegate = self;
+        brightness.delegate = self;
         
         // Do any additional setup after loading the view, typically from a nib.
     }

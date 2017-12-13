@@ -15,6 +15,8 @@
 		32A490631CFA3EBA009D4A3F /* TestSwiftProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A490621CFA3EBA009D4A3F /* TestSwiftProjectTests.swift */; };
 		32A4906E1CFA3EBA009D4A3F /* TestSwiftProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A4906D1CFA3EBA009D4A3F /* TestSwiftProjectUITests.swift */; };
 		32A4907C1CFA3EEA009D4A3F /* ColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A4907B1CFA3EEA009D4A3F /* ColorPicker.swift */; };
+		4C300AF21FE03F1800A199C9 /* BrightnessPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C300AF11FE03F1800A199C9 /* BrightnessPicker.swift */; };
+		4C300AF41FE0D4B100A199C9 /* ColorControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C300AF31FE0D4B100A199C9 /* ColorControl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		32A4906D1CFA3EBA009D4A3F /* TestSwiftProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSwiftProjectUITests.swift; sourceTree = "<group>"; };
 		32A4906F1CFA3EBA009D4A3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		32A4907B1CFA3EEA009D4A3F /* ColorPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPicker.swift; sourceTree = "<group>"; };
+		4C300AF11FE03F1800A199C9 /* BrightnessPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrightnessPicker.swift; sourceTree = "<group>"; };
+		4C300AF31FE0D4B100A199C9 /* ColorControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorControl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 				32A490561CFA3EBA009D4A3F /* LaunchScreen.storyboard */,
 				32A490591CFA3EBA009D4A3F /* Info.plist */,
 				32A4907B1CFA3EEA009D4A3F /* ColorPicker.swift */,
+				4C300AF11FE03F1800A199C9 /* BrightnessPicker.swift */,
+				4C300AF31FE0D4B100A199C9 /* ColorControl.swift */,
 			);
 			path = TestSwiftProject;
 			sourceTree = "<group>";
@@ -260,8 +266,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C300AF21FE03F1800A199C9 /* BrightnessPicker.swift in Sources */,
 				32A490501CFA3EBA009D4A3F /* ViewController.swift in Sources */,
 				32A4904E1CFA3EBA009D4A3F /* AppDelegate.swift in Sources */,
+				4C300AF41FE0D4B100A199C9 /* ColorControl.swift in Sources */,
 				32A4907C1CFA3EEA009D4A3F /* ColorPicker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -367,6 +375,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -414,6 +423,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
